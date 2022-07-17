@@ -37,19 +37,13 @@ OWNER_NAME = getenv("OWNER_NAME")
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{IMG_DEV1}",
-       caption=f"""❲ Developers Bot ❳
-— — — — — — — — —
-𖥔 Dev User : @{OWNER}""",
+        photo=f"https://telegra.ph/file/a6c96cdbd066ca2388d06.jpg",
+        caption=f"""ᴘʀᴏɢʀᴀᴍᴍᴇʀ [𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ☤ ](https://t.me/WORLD_MUSIC_F) 𖡼\nᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ 𖡼\nғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ 𖡼""",
         reply_markup=InlineKeyboardMarkup(
+         [
             [
-                [
-                    InlineKeyboardButton(
-                        "- Devoleper Bot .", url=f"https://t.me/{OWNER}")
-                ],[
-                    InlineKeyboardButton(
-                        "اضف البوت الي مجموعتك", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-                ],
+                InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
-        ),
-    )
+         ]
+     )
+  )

@@ -37,7 +37,7 @@ NAME_BOT = getenv("NAME_BOT")
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{IMG_BOT1}",
-        caption=f"اسمي {NAME_BOT} يقمر 😮‍💨💕", 
+        caption=f"اسمي {NAME_BOT} 😮‍💨💕", 
         reply_markup=InlineKeyboardMarkup(
             [
                 [

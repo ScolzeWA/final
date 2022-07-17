@@ -24,29 +24,19 @@ BOT_USERNAME = getenv("BOT_USERNAME")
 
 
 @app.on_message(
-    command(["سورس فمبير","سورس","السورس","يا سورس"])
+    command([","سورس","السورس"])
     & filters.group
     & ~filters.edited
 )
 async def khalid(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/b6d7f12c06eb782447c7e.png",
-        caption=f"""[ٓ❍ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐎𝐔𝐑𝐂𝐄 𝐕𝘼𝙈𝘽𝙄𝙍 .](https://t.me/XxvprxX)\n\n[❍ | 𝐕𝘼𝙈𝘽𝙄𝙍 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐧 𝐓𝐞𝐥𝐞 .](https://t.me/XxvprxX)\n\n[❍ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰 .](https://t.me/XxvprxX)""",
+        photo=f"https://telegra.ph/file/a6c96cdbd066ca2388d06.jpg",
+        caption=f"""ᴘʀᴏɢʀᴀᴍᴍᴇʀ [𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍 ☤ ](https://t.me/WORLD_MUSIC_F) 𖡼\nᴛᴏ ᴄᴏᴍᴍụɴɪᴄᴀᴛᴇ ᴛᴏɢᴇᴛʜᴇʀ 𖡼\nғᴏʟʟᴏᴡ ᴛʜᴇ ʙụᴛᴛᴏɴѕ ʟᴏᴡᴇʀ 𖡼""",
         reply_markup=InlineKeyboardMarkup(
+         [
             [
-                [
-                    InlineKeyboardButton(
-                        "ᯓ˹ 𝐕𝘼𝙈𝘽𝙄𝙍𖣥⃟⃟⃟⃟⃟🇵🇸فمـبــيرـ͢）⛧", url=f"https://t.me/XxlllllllllllllllllllllllllllxX"), 
-                ],[
-                    InlineKeyboardButton(
-                        "𝐒𝐎𝐔𝐑𝐂𝐄«𝐕𝘼𝙈𝘽𝙄𝙍🖥", url=f"https://t.me/XxvprxX"),
-                ],[
-                    InlineKeyboardButton(
-                        "اضغط لاضافه البوت لمجموعتك✅.", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
-                ],
-
+                InlineKeyboardButton("♡اضف البوت الى مجموعتك♡", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
-
-        ),
-
-    )
+         ]
+     )
+  )
